@@ -15,9 +15,9 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: caboose0013/reverseproxy
-        name: reverseproxy
-        imagePullPolicy: Always          
+      - name: reverseproxy
+        image: caboose0013/reverseproxy:v1
+        imagePullPolicy: Always
         resources:
           requests:
             memory: "64Mi"
